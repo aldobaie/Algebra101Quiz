@@ -1,0 +1,29 @@
+<resources>
+	<string name="app_name">Algebra 101 Quiz</string>
+	<string name="reset">Reset</string>
+	<string name="view_answers">View Answers</string>
+	<string name="submit">Submit</string>
+	<string name="welcome">Welcome to Algebra 101 Quiz! Goog Luck!!</string>
+	
+	<string name="radio_question_1">Evaluate: \n\t[2 – (5 – 6(6 – 4) + 7)] + 4</string>
+	<string name="radio_question_1_choice_1">-42</string>
+	<string name="radio_question_1_choice_2">33</string>
+	<string name="radio_question_1_choice_3">6</string>
+	<string name="radio_question_1_choice_4">None of the above</string>
+	
+	<string name="edit_text_question_2">Solve for x:\n\t(x – 5)/4 = (x + 5)/5</string>
+	<string name="edit_text_question_2_hint">Enter digits only</string>
+	<string name="editText_question_2_answer">45</string>
+	
+	<string name="check_box_question_3">Choose the correct answers for x in \n\t(x – 2)(x + 5) = 0</string>
+	<string name="check_box_question_3_option_1">x = 5</string>
+	<string name="check_box_question_3_option_2">x = 2</string>
+	<string name="check_box_question_3_option_3">x = -5</string>
+	<string name="check_box_question_3_option_4">x = -2</string>
+	
+	<string name="radio_question_4"><![CDATA[Dissmore\'s has reduced prices by 11% on everything to thank their customers for their patronage. If Ben & Jerry\'s ® Phish Food TM ice cream cost $2.99 before the price reduction, how much does it cost now? (Round your answer to the nearest penny.)]]></string>
+	<string name="radio_question_4_choice_1">$2.69</string>
+	<string name="radio_question_4_choice_2">$2.66</string>
+	<string name="radio_question_4_choice_3">$2.60</string>
+	<string name="radio_question_4_choice_4">None of the above</string>
+</resources>
