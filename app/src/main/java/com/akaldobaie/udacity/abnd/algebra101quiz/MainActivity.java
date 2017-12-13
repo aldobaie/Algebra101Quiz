@@ -8,16 +8,13 @@ import android.widget.EditText;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
-
 /**
  * Author: Abdullah Aldobaie
  * Date: Dec 13, 2017
- *
+ * <p>
  * Udacity Android Basic Nano-Degree Project: Quiz App
  */
 public class MainActivity extends AppCompatActivity {
-	
-	
 	
 	// Question 1
 	RadioGroup question1;
@@ -34,8 +31,6 @@ public class MainActivity extends AppCompatActivity {
 	// Question 4
 	RadioGroup question4;
 	
-	
-	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -51,10 +46,7 @@ public class MainActivity extends AppCompatActivity {
 		questionThreeBoxFour = findViewById(R.id.check_box_question_3_box_4);
 		
 		question4 = findViewById(R.id.radio_question_4);
-		
 	}
-	
-	
 	
 	/**
 	 * onClick function:
@@ -86,7 +78,7 @@ public class MainActivity extends AppCompatActivity {
 			 ) {
 			score += 1;
 		}
-
+		
 		// Check question 4's answer
 		if (question4.getCheckedRadioButtonId() == R.id.radio_question_4_correct) {
 			score += 1;
@@ -95,8 +87,6 @@ public class MainActivity extends AppCompatActivity {
 		// Tell the user their score
 		Toast.makeText(this, "Your score is " + score + " out of 4", Toast.LENGTH_LONG).show();
 	}
-	
-	
 	
 	/**
 	 * onClick function:
@@ -124,8 +114,6 @@ public class MainActivity extends AppCompatActivity {
 		question4.check(R.id.radio_question_4_correct);
 	}
 	
-	
-	
 	/**
 	 * onClick function:
 	 * resets the quiz and removes all current answers
@@ -136,8 +124,12 @@ public class MainActivity extends AppCompatActivity {
 	public void resetQuiz(View v) {
 		
 		// Reset question 1 radioButtons
-		RadioGroup question1 = findViewById(R.id.radio_question_1);
-		question1.clearCheck();
+		if (question1 == null) {
+			question1 = findViewById(R.id.radio_question_1);
+			question1.clearCheck();
+		} else {
+			question1.clearCheck();
+		}
 		
 		// Reset question 2 editText
 		questionTwoAnswer.setText("");
@@ -151,7 +143,5 @@ public class MainActivity extends AppCompatActivity {
 		
 		// Reset question 4 radioButtons
 		question4.clearCheck();
-		
 	}
-	
 }

@@ -13,15 +13,12 @@
 		 android:focusableInTouchMode="true"
 		 android:orientation="vertical">
 		
-		
 		<TextView
 			 android:layout_width="wrap_content"
 			 android:layout_height="wrap_content"
-			 android:text="@string/welcome"
 			 android:padding="16dp"
+			 android:text="@string/welcome"
 			 android:textSize="24sp"/>
-		
-		
 		
 		<!--      QUESTION 1      -->
 		<RadioGroup
@@ -48,8 +45,8 @@
 				 android:text="@string/radio_question_1_choice_2"/>
 			
 			<RadioButton
-				 style="@style/Answer"
 				 android:id="@+id/radio_question_1_correct"
+				 style="@style/Answer"
 				 android:layout_width="match_parent"
 				 android:layout_height="wrap_content"
 				 android:text="@string/radio_question_1_choice_3"/> <!-- Correct -->
@@ -62,7 +59,6 @@
 		
 		</RadioGroup>
 		
-		
 		<!--      QUESTION 2      -->
 		<TextView
 			 style="@style/Question"
@@ -71,15 +67,14 @@
 			 android:text="@string/edit_text_question_2"/>
 		
 		<EditText
-			 style="@style/Answer"
 			 android:id="@+id/edit_text_question_2_answer"
+			 style="@style/Answer"
 			 android:layout_width="match_parent"
 			 android:layout_height="wrap_content"
 			 android:hint="@string/edit_text_question_2_hint"
 			 android:inputType="number"
 			 android:text=""
 			 />  <!-- Correct answer 45 -->
-		
 		
 		<!--      QUESTION 3      -->
 		<TextView
@@ -89,33 +84,32 @@
 			 android:text="@string/check_box_question_3"/>
 		
 		<CheckBox
-			 style="@style/Answer"
 			 android:id="@+id/check_box_question_3_box_1"
+			 style="@style/Answer"
 			 android:layout_width="match_parent"
 			 android:layout_height="wrap_content"
 			 android:text="@string/check_box_question_3_option_1"/>
 		
 		<CheckBox
-			 style="@style/Answer"
 			 android:id="@+id/check_box_question_3_box_2"
+			 style="@style/Answer"
 			 android:layout_width="match_parent"
 			 android:layout_height="wrap_content"
 			 android:text="@string/check_box_question_3_option_2"/> <!-- Correct -->
 		
 		<CheckBox
-			 style="@style/Answer"
 			 android:id="@+id/check_box_question_3_box_3"
+			 style="@style/Answer"
 			 android:layout_width="match_parent"
 			 android:layout_height="wrap_content"
 			 android:text="@string/check_box_question_3_option_3"/> <!-- Correct -->
 		
 		<CheckBox
-			 style="@style/Answer"
 			 android:id="@+id/check_box_question_3_box_4"
+			 style="@style/Answer"
 			 android:layout_width="match_parent"
 			 android:layout_height="wrap_content"
 			 android:text="@string/check_box_question_3_option_4"/>
-		
 		
 		<!--      QUESTION 4      -->
 		<RadioGroup
@@ -136,8 +130,8 @@
 				 android:text="@string/radio_question_4_choice_1"/>
 			
 			<RadioButton
-				 style="@style/Answer"
 				 android:id="@+id/radio_question_4_correct"
+				 style="@style/Answer"
 				 android:layout_width="match_parent"
 				 android:layout_height="wrap_content"
 				 android:text="@string/radio_question_4_choice_2"/><!-- Correct -->
@@ -155,7 +149,6 @@
 				 android:text="@string/radio_question_4_choice_4"/>
 		
 		</RadioGroup>
-		
 		
 		<!--      BUTTONS BAR      -->
 		<LinearLayout
